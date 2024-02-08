@@ -1,9 +1,6 @@
-import { json } from 'react-router-dom';
-
 export const baseUrl = 'http://localhost:5600/api';
 
 export const postRequest = async (url, body) => {
-  console.log({ url, body });
   const response = await fetch(url, {
     method: 'POST',
     headers: {
